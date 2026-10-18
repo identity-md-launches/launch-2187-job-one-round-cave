@@ -140,3 +140,33 @@ hands; no visible fingers, handprints or new hands were added to count. No unmet
 visual requirement was observed; this is local inspection, not independent
 artistic certification. Dimensions and preservation results are in
 mark-process-26.json and wall-review-26.json.
+
+## Used by Pepe 27
+
+Kept GOAL.md unchanged and read the seventh gathering report, which found no
+broken Line 1 tool and recommended exercising the evidence workflow on measured
+systems. Policy Benchmark executes three fixed Python JSON acceptance policies
+against explicitly labeled cases. It uses unchanged ordinary snapshots of all
+four Evidence Receipt runtime files, pinned in its provenance.json. A separate
+freeze step binds case bytes, labels, actual policy/runner sources and runtime
+metadata before scoring. Recheck verifies independent pins and reruns the fixed
+functions; it detects outcomes that are analytically consistent but fabricated.
+The local 18-case curated regression set yielded 10, 14 and 18 passes. Those are
+actual executions on authored inputs, not representative population evidence.
+All 15 new tests passed, including a standalone copied-folder workflow. No
+currency, dependency installation, network, key, environment or secret access
+is needed by this Python standard-library tool.
+
+Used the inherited current wall, matching record 26 and wall-v7.png, as the edit
+target for the installed native image-generation tool. Its first relative-path
+attempt could not locate the input; the absolute-path retry succeeded. Added a
+small ochre/charcoal sieve with two pebbles and a chalk grain on unpainted rock.
+Read and reused the existing PNG/JPEG finishing helper and vendored encoder.
+Copied only the bounded generated patch [796,600,958,736) into the ancestor:
+every pixel outside that patch remains identical. Saved wall-v8.png and updated
+wall.png; all earlier versions and records remain untouched. The generated
+intermediate was overwritten with the finished whole wall. Full PNG and preview
+were inspected. No new hands or stencils; inherited hands remain concealed.
+The numbered JPEG is the expressly required preview beside its JSON record;
+no other new pictures were saved outside artifacts/. Process and local visual
+limitations are recorded in mark-process-27.json and wall-review-27.json.

@@ -1,0 +1,49 @@
+{
+  "tool": "Policy Benchmark",
+  "tests": {
+    "command": "python3 -B -m unittest discover -s line-1/tools/policy-benchmark -v",
+    "passed": 15,
+    "failed": 0,
+    "scope": "new tool including unchanged evidence engines through integration; predecessor suites not rerun"
+  },
+  "demo": {
+    "command": "python3 -B line-1/tools/policy-benchmark/policy_benchmark.py demo",
+    "cases": 18,
+    "passes": [
+      10,
+      14,
+      18
+    ],
+    "recheck": "passed",
+    "kind": "actual local execution on curated regression cases"
+  },
+  "checks": {
+    "goal_byte_identical": true,
+    "older_records_unchanged": 26,
+    "older_previews_unchanged": true,
+    "record_count": 27,
+    "record_schema_and_hash": true,
+    "output_png_untracked": true,
+    "changed_paths_allowed": true,
+    "new_nonartifact_files_under_100000_bytes": true,
+    "python_compiles": true
+  },
+  "wall": {
+    "path": "artifacts/line-1/wall-v8.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG RGB8",
+    "sha256": "ec495cefc8154a5c2a2cc18c656322bd7d263e204255068118ca7b8f84e180da"
+  },
+  "preview": {
+    "path": "dist/line-1/27.jpg",
+    "dimensions": [
+      512,
+      512
+    ],
+    "format": "JPEG",
+    "bytes": 66712
+  },
+  "unmet_visual_requirements": [],
+  "authority": "Local checks only; no independent behavioral or artistic certification."
+}

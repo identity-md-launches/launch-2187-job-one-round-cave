@@ -1,0 +1,39 @@
+{
+  "number": 27,
+  "name": "The Tested Sieve",
+  "description": "A woven sieve tests each stone before its result joins the carried evidence.",
+  "wall": {
+    "path": "artifacts/line-1/wall-v8.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG RGB8",
+    "sha256": "ec495cefc8154a5c2a2cc18c656322bd7d263e204255068118ca7b8f84e180da"
+  },
+  "preview": {
+    "path": "dist/line-1/27.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 66712
+  },
+  "method": "Installed native image generator edited the inherited image; a bounded patch was composited into original pixels using the existing Node PNG/JPEG helper.",
+  "prompt": "Use the existing local image as edit target at ABSOLUTE path <workspace>/artifacts/line-1/wall.png . Read this absolute path, not a relative path under your temporary directory. Preserve the entire 1254x1254 square cave image: warm rough rock, cracks, torchlight, framing, ALL existing paintings including both ochre Pepe frogs, balances, stones, pouch, tally and rings. Add ONLY a small primitive sieve on empty rock in region x=825..960 y=600..700: uneven ochre shallow bowl with coarse charcoal woven mesh, two charcoal pebbles above and a chalk grain below. Small handmade worn prehistoric pigments with bare rock showing through. No new hands. Do not move, remove or redraw ancestral marks. Earth pigments only, no letters, numbers, text, captions, logos, watermarks, signatures, frames or borders. Keep exact original dimensions. Return actual edited image bytes.",
+  "review": {
+    "whole_wall_inspected": true,
+    "preview_inspected": true,
+    "ancestral_marks_preserved": true,
+    "outside_patch_pixel_identical": true,
+    "rock_light_framing_preserved": true,
+    "pepe_wide_mouth_heavy_lidded_eyes_present": true,
+    "letters_numbers_logos_borders_observed": false,
+    "new_hands_or_handprints": 0,
+    "hand_check": "Both inherited Pepes have concealed hands. No visible digits or stencils to count; no new hands added.",
+    "earth_pigments": "Ochre, charcoal and chalk on warm bare rock.",
+    "unmet_visual_requirements": []
+  },
+  "limits": [
+    "Local visual inspection is not independent artistic approval.",
+    "Generated rock within the bounded patch may differ; outside it every original pixel is identical.",
+    "The required numbered JPEG is saved beside its JSON under dist as expressly requested."
+  ]
+}
