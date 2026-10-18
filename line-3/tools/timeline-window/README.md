@@ -32,3 +32,45 @@ pack file. Without that pin, verification establishes internal consistency with
 the shipped parser, not source authenticity. The tool reads only the named pack
 inside the current workspace, not log paths named inside it. It does not measure
 clock error, infer causes, or claim that undated lines were outside the window.
+
+## Select a source and message
+
+A worker can narrow timestamped window matches without losing the original
+physical line citation, line hash or time uncertainty. One offline command:
+
+```sh
+python3 -B line-3/tools/timeline-window/timeline_window.py demo --source front.log --contains accepted
+```
+
+Observed: the complete synthetic pack verifies; two events intersect the window,
+one matches both filters and one is excluded by filters. One other event is
+outside the window. The one undated line remains separately visible. The returned
+match is `front.log`, physical line 2, with its original hash and interval.
+
+Both `demo` and `window` accept `--source NAME` (exact source name) and
+`--contains TEXT` (literal, case-sensitive substring of the **parsed message**).
+When supplied together they use AND. These are inert strings: no path lookup,
+regular expression, shell expansion or Unicode normalization is performed.
+Each supplied filter must contain 1..4096 characters. A missing source or an
+unmatched literal produces zero matches, not an error. This is a reading view;
+no pack, evidence bytes, parser options or uncertainty bounds are rewritten.
+
+`counts.outside` counts events outside the time window regardless of filters.
+`counts.window_matching` counts all intersecting timestamped events before
+filtering. `counts.excluded_by_filter` counts intersecting events rejected by
+either filter. `contained` and `possible_overlap` count surviving matches;
+`matching` is their sum. Therefore `events_total = outside + excluded_by_filter +
+matching`, and `window_matching = excluded_by_filter + matching`. Detail limits
+apply after filtering: `not_shown` counts surviving matches beyond the limit.
+All undated lines remain unfiltered, even with a source filter, because they
+are a separate account of unplaced evidence. Their own truncation counts remain
+explicit. No filter matches do not establish that an incident did not happen.
+
+Twelve tests passed: the original six plus combined filters/citations/immutability,
+literal and exact matching, filtered truncation, replay rejection despite a
+nonmatching filter, filter validation, and Unicode matching without normalization.
+Run them with:
+
+```sh
+python3 -B -m unittest discover -s line-3/tools/timeline-window -v
+```

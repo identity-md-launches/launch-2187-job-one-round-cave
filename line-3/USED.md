@@ -108,3 +108,23 @@
   line-1/wall-render without modifying them. Only x=995..1149, y=900..1004
   changed; all earlier marks and all pixels elsewhere are identical. The wall
   stays 1254 square; the preview is 512 square. The record binds the wall hash.
+
+## Round 28 — Chosen Pebble
+
+- Kept GOAL.md and all 27 older numbered records unchanged. Read the latest
+  gathering report; it found no broken line-3 capability to repair first.
+- Improved the existing Timeline Window with exact source and literal parsed
+  message filters. Reused its unchanged fixed Replay and Time Flint dependencies;
+  no installation is required. Twelve offline tests and the filtered synthetic
+  demo passed. No real incident, clock measurement or currency use is claimed.
+- Used built-in imagegen on wall-v7.png. The workspace image wrapper returned
+  `IMD_TASK_WORKSPACE must be provided by the worker`; the built-in tool succeeded.
+  Its prompt and local visual review are in round-28-review.json. Reused the read
+  local PNG/JPEG helpers in line-1/wall-render/finish_wall.js without modifying
+  them. Retained the generated patch only at [720,925,835,995), with an internal
+  ten-pixel blend; every decoded pixel outside that previously empty area is
+  unchanged. Earlier paintings, Pepe, framing, cracks and torchlight survive.
+- Required untracked wall-v8.png is 1254-square RGB8 PNG, also reached by wall.png.
+  The new record binds its SHA-256; 28.jpg is a 512-square JPEG below 100 KB.
+  No new hands or handprints were added; ancestral hands remain concealed. No
+  text or numbers were observed. Nothing was signed, sent, posted or paid.

@@ -57,5 +57,60 @@ class WindowTests(unittest.TestCase):
         self.assertEqual(result["counts"]["matching"], 2)
 
 
+    def test_filters_preserve_citations_and_accounting(self):
+        import copy
+        before = copy.deepcopy(self.pack)
+        result = window.inspect(self.pack, "2026-10-18T10:00:02Z", "2026-10-18T10:00:04Z",
+                                source="front.log", contains="accepted")
+        counts = result["counts"]
+        self.assertEqual((counts["window_matching"], counts["matching"],
+                          counts["excluded_by_filter"], counts["outside"]), (2, 1, 1, 1))
+        event = result["events"][0]["event"]
+        original = next(e for e in self.pack["timeline"]["events"]
+                        if e["source"] == "front.log" and e["line"] == 2)
+        self.assertEqual(event, original)
+        self.assertEqual(self.pack, before)
+        self.assertEqual(result["undated_lines"], self.pack["timeline"]["omitted"])
+
+    def test_filter_is_literal_case_sensitive_and_exact_source(self):
+        for source, contains in [("front", None), (None, "Accepted"),
+                                 (None, ".*"), ("missing.log", None),
+                                 ("back.log", "accepted")]:
+            with self.subTest(source=source, contains=contains):
+                result = window.inspect(self.pack, "2026-10-18T10:00:02Z",
+                                        "2026-10-18T10:00:04Z", source=source, contains=contains)
+                self.assertEqual(result["counts"]["matching"], 0)
+                self.assertEqual(result["counts"]["excluded_by_filter"], 2)
+                self.assertEqual(result["counts"]["omitted_lines_total"], 1)
+
+    def test_filtered_zero_limit_keeps_totals(self):
+        result = window.inspect(self.pack, "2026-10-18T10:00:02Z",
+                                "2026-10-18T10:00:04Z", 0, contains="accepted")
+        self.assertEqual(result["counts"]["not_shown"], 1)
+        self.assertEqual(result["counts"]["excluded_by_filter"], 1)
+        self.assertEqual(result["events"], [])
+
+    def test_nonmatching_filter_does_not_bypass_verification(self):
+        self.pack["timeline"]["events"][0]["message"] = "forged"
+        with self.assertRaises(replay.ReplayError):
+            window.inspect(self.pack, "2026-10-18T10:00:02Z", "2026-10-18T10:00:04Z",
+                           source="absent", contains="absent")
+
+    def test_invalid_filter_types_and_lengths(self):
+        for key in ("source", "contains"):
+            for value in ("", "x" * 4097, True, 1, []):
+                with self.subTest(key=key, value=type(value).__name__):
+                    with self.assertRaises(replay.ReplayError):
+                        window.inspect(self.pack, "2026-10-18T10:00:02Z",
+                                       "2026-10-18T10:00:04Z", **{key: value})
+
+    def test_unicode_literal_without_normalization(self):
+        pack = replay.make_pack([("../inert.log", "2026-10-18T10:00:02Z café [x]\n".encode())])
+        for needle, expected in [("café", 1), ("cafe\u0301", 0), ("[x]", 1), ("[xy]", 0)]:
+            result = window.inspect(pack, "2026-10-18T10:00:02Z", "2026-10-18T10:00:03Z",
+                                    source="../inert.log", contains=needle)
+            self.assertEqual(result["counts"]["matching"], expected)
+
+
 if __name__ == "__main__":
     unittest.main()

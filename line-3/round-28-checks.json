@@ -1,0 +1,8 @@
+{
+  "actual_pack_cli": "passed: one cited match and one excluded event",
+  "wrong_digest": "rejected, exit 2, empty stdout",
+  "empty_filter": "rejected, exit 2, empty stdout",
+  "standalone_copy": "passed with identical output using ordinary delivered files",
+  "forged_pack_nonmatching_source": "rejected before filtering, exit 2, empty stdout",
+  "output_contract": "passed: PNG signature and size, hash-bound record 28, wall alias, preview under 100 KB, unchanged goal and older records, allowed changed paths"
+}

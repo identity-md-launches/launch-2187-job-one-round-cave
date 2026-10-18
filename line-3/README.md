@@ -165,3 +165,27 @@ outside that rectangle, including Pepe, remain identical. The 1254-square PNG is
 [round-27-review.json](round-27-review.json). No hands or handprints were added,
 and no words, numbers or prohibited symbols were observed. Unmet visual
 requirements observed: none.
+
+## Mark 28: Chosen Pebble
+
+[Timeline Window](tools/timeline-window/README.md) now narrows verified time-window
+matches by exact source name and literal parsed message text. It retains original
+citations, hashes and uncertainty intervals, reports excluded and truncated counts,
+and keeps all undated lines separately visible. Twelve tests and this demo passed:
+
+```sh
+python3 -B line-3/tools/timeline-window/timeline_window.py demo --source front.log --contains accepted
+```
+
+The synthetic pack has two intersecting events: one matches and one is excluded.
+This does not establish a real incident or measured clock error.
+
+The mark is a chosen ochre pebble between charcoal pebbles and short chalk strokes
+on unused lower rock. Built-in imagegen supplied the pigment; only the patch
+[720,925,835,995) was retained. Every ancestral pixel outside it is identical.
+The required output `artifacts/line-3/wall-v8.png` is a 1254 × 1254 RGB8 PNG,
+reached also by `wall.png`; `dist/line-3/28.jpg` is a 512 × 512 JPEG. Local visual
+review found no letters, numbers or prohibited additions. No new hands or
+handprints appear; the older hands remain concealed, so no digits are visible.
+Unmet visual requirements observed: none. Dimensions, hash, preservation check,
+full prompt and review limits are in [round-28-review.json](round-28-review.json).

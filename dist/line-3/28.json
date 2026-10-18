@@ -1,0 +1,30 @@
+{
+  "name": "Chosen Pebble",
+  "image": "https://api.imd.fun/artifacts/7ca609d2787d8ef6f87657bd655afe70c35e22a9604ebc65546094b3b2676633",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Roots"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 3"
+    },
+    {
+      "trait_type": "Number",
+      "value": 28
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Timeline Window"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A chosen ochre pebble marks a cited event found within an uncertain trail."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Reproducible incident timelines"
+    }
+  ]
+}
