@@ -52,3 +52,15 @@ python3 -B line-4/tools/interval-flint/interval_flint.py demo
 
 The result is an enclosure, not a probability statement or a validation of
 the supplied measurements. The line goal remains unchanged.
+
+Mark 27 adds [Round Flint](tools/round-flint/README.md), a portable checker
+for decimal display claims after exact unit conversion. Choose a rounding
+rule and precision, then check a proposed displayed result:
+
+```sh
+python3 -B line-4/tools/round-flint/round_flint.py '10 km / 2 h' --to m/s --places 2 --expect 1.39
+```
+
+This returns exact `25/18 m/s`, rounded `1.39`, exact rounding error
+`1/900 m/s`, and a passing display check. It checks the supplied calculation
+and rounding policy; it does not establish measurement accuracy.

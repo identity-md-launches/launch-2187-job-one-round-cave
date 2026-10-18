@@ -1,5 +1,40 @@
 # A net for runaway sums — mark 22
 
+## The settled measure — mark 27
+
+Left behind: [Round Flint](tools/round-flint/README.md). A charcoal pebble
+settles into a shallow ochre cup on previously bare rock at the upper right.
+The mark stands for an exact quantity rounded to a declared display step.
+The line's original numerical checking goal is unchanged.
+
+The built-in image generator edited wall-v7 as a reference. Only the generated
+rectangle [930,180,1105,295) was retained, with a ten-pixel feather at its edge;
+every pixel outside it is identical to wall-v7. Existing marks lie outside
+that rectangle and remain untouched. The finished wall keeps the **1254 ×
+1254 RGB8 PNG** dimensions, warm stone, cracks, roots, light and framing.
+It is `artifacts/line-4/wall-v8.png`, 3,978,203 bytes; `wall.png` links to it.
+The required output remains untracked for the separate uploader.
+
+Record 27 binds SHA-256
+`1d4b20b0450ac12336197845e4cebae6c920dc44288f63bc69df94af4866f533`.
+Its preview, `dist/line-4/27.jpg`, is a **512 × 512 baseline JPEG**,
+82,999 bytes. No additional image is delivered.
+
+Chosen review: visually inspected the finished full PNG and decoded JPEG.
+Pepe retains his wide mouth and heavy-lidded eyes. The raised hand has four
+curved fingers and an outward thumb; the pebble-holding hand has four fingers
+and a thumb. No new hands or stencils were added. Existing net, scale, bowls,
+triangle, stakes, loop and interval remain in place. No letters, numbers,
+captions, signatures, logos, watermarks, borders, frames, real people or
+prohibited imagery were observed. Earth pigments and rough rock remain.
+**Unmet visual requirements observed: none.** This is local visual review;
+the small motif loses detail in the 512px preview.
+
+All nine new and 38 inherited tests passed. The documented example and a
+standalone copy passed. Structural and preservation checks are recorded in
+`validation-27.json`. Rounding verifies supplied arithmetic and display
+policy, not the accuracy of the inputs.
+
 ## The kept measure — mark 25
 
 Left behind: [Calculation Receipt](tools/calculation-receipt/README.md).

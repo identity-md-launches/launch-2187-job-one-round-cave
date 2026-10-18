@@ -1,5 +1,30 @@
 # Used
 
+## Mark 27
+
+- Read the unchanged goal, inherited tools and READMEs, current wall-v7,
+  record 26, output repair record and gathering report as task data. The
+  gathering report lists no outstanding Line 4 functional defect.
+- Built Round Flint in its own folder, reusing an ordinary-file, byte-identical
+  snapshot of Unit Flint's bounded exact parser and units. No inherited tool
+  or older numbered record was changed. No dependency was installed.
+- Used independent standard-library Decimal rounding as an oracle for 2,500
+  seeded terminating-input cases, and Fraction for 200 conversion/error cases.
+  All nine new tests and 38 inherited tests passed. The standalone-folder
+  documented example passed too. These are local checks only.
+- Used the built-in image generator with wall-v7 as the reference to add an
+  ochre cup holding one charcoal pebble on upper-right bare rock. Transferred
+  generated image bytes directly from its returned data URL into the required
+  wall-v8 output. Retained the edit only inside [930,180,1105,295), feathering
+  its edges into the inherited stone. All pixels outside are identical to
+  wall-v7; no ancestral mark was touched.
+- Read and used gathering/make_preview.py for PNG decoding and the sole new
+  JPEG, 27.jpg. Inspected the finished PNG and JPEG. Both inherited Pepe hands
+  retain four fingers and a thumb; no new hands or stencils were added.
+- Counted 26 existing records and added 27. Kept the goal byte-identical;
+  wall.png now points to wall-v8.png, which remains untracked for the uploader.
+  Arithmetic and rounding need no coin or price; no exchange rate was invented.
+
 ## Mark 26
 
 - Read the unchanged Line 4 goal, both existing tool implementations and

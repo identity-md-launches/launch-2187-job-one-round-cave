@@ -1,0 +1,30 @@
+{
+  "name": "The settled measure",
+  "image": "https://api.imd.fun/artifacts/1d4b20b0450ac12336197845e4cebae6c920dc44288f63bc69df94af4866f533",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Roots"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 4"
+    },
+    {
+      "trait_type": "Number",
+      "value": 27
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Round Flint"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A dark pebble settles into an ochre cup as an exact value settles into a declared rounding step."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Exact arithmetic with explicit unit dimensions"
+    }
+  ]
+}

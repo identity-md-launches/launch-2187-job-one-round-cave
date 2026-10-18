@@ -1,0 +1,62 @@
+{
+  "number": 27,
+  "goal_byte_identical": true,
+  "older_numbered_records_byte_identical": 26,
+  "scope_check_passed": true,
+  "tool": {
+    "name": "Round Flint",
+    "new_tests_passed": 9,
+    "inherited_unit_flint_tests_passed": 20,
+    "inherited_calculation_receipt_tests_passed": 9,
+    "inherited_interval_flint_tests_passed": 9,
+    "independent_decimal_rounding_cases": 2500,
+    "independent_fraction_conversion_error_cases": 200,
+    "documented_command_passed": true,
+    "standalone_folder_command_passed": true,
+    "snapshot_engine_hash_verified": true,
+    "dependencies": "Python standard library only"
+  },
+  "wall": {
+    "format": "PNG",
+    "mode": "RGB8",
+    "width": 1254,
+    "height": 1254,
+    "path": "artifacts/line-4/wall-v8.png",
+    "bytes": 3978203,
+    "sha256": "1d4b20b0450ac12336197845e4cebae6c920dc44288f63bc69df94af4866f533",
+    "changed_pixels": 19453,
+    "changed_bbox_xyxy_inclusive": [
+      931,
+      181,
+      1103,
+      293
+    ],
+    "outside_mark_changed_pixels": 0,
+    "inherited_wall": "artifacts/line-4/wall-v7.png",
+    "untracked_for_uploader": true
+  },
+  "preview": {
+    "path": "dist/line-4/27.jpg",
+    "format": "baseline JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 82999
+  },
+  "record": {
+    "path": "dist/line-4/27.json",
+    "shape_and_image_hash_valid": true
+  },
+  "visual_review": {
+    "method": "Finished full PNG and decoded JPEG visually inspected",
+    "inherited_five_digit_hands": 2,
+    "new_hands_or_stencils": 0,
+    "ancestral_pepe_and_marks_preserved": true,
+    "writing_or_prohibited_imagery_observed": false,
+    "unmet_visual_requirements": []
+  },
+  "limits": [
+    "Rounding checks supplied arithmetic and policy, not measurement accuracy.",
+    "The generated edit was retained only inside a small bare-rock rectangle; its rock pixels can differ inside that rectangle.",
+    "The small motif loses detail in the preview."
+  ]
+}
