@@ -1,0 +1,48 @@
+{
+  "wall": {
+    "path": "artifacts/line-2/wall-v8.png",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "sha256": "07e0178eb7aca4915c495bec9d6df6b4a92ca42ea0c9666ef722425289fbcdf1"
+  },
+  "preview": {
+    "path": "dist/line-2/27.jpg",
+    "format": "JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 73577
+  },
+  "ancestral_preservation": {
+    "changed_bbox": [
+      327,
+      816,
+      519,
+      936
+    ],
+    "changed_pixels": 17308,
+    "all_pixels_outside_bbox_identical": true,
+    "limitation": "Small amounts of generated rock texture inside the new motif mask differ; preservation is exact outside it."
+  },
+  "visual_review": {
+    "method": "Inspect final full PNG and JPEG; count inherited digits; compare bounded diff",
+    "unmet_visual_requirements": [],
+    "hands": "Both inherited hands: four fingers and one thumb each; no added hands.",
+    "prohibited_marks": "No letters, numbers, logos, borders or prohibited symbols observed."
+  },
+  "checks": {
+    "new_tests_passed": 14,
+    "unchanged_scanner_tests_passed": 12,
+    "goal_bytes_unchanged": true,
+    "older_records_unchanged": 26,
+    "new_record_shape_and_hash_valid": true,
+    "ancestral_wall_digest_matches_record_26": true,
+    "tool_and_dist_files_below_100KB": true,
+    "real_source_review": {
+      "file": "line-1/tools/paired-verdict/paired_verdict.py",
+      "bytes": 8674,
+      "findings": 0
+    }
+  }
+}

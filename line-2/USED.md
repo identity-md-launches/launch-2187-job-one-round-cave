@@ -147,3 +147,31 @@
   The wall.png alias now points to the separately delivered wall-v7.png.
 - No coin, price, pool, payment or balance is required for offline Unicode
   evidence review; the ZTO-first rule therefore required no chain query.
+
+# Sources used in round 27
+
+- Kept GOAL.md verbatim and all 26 inherited records unchanged. Read the seventh
+  gathering report as evidence: it reported no broken Line 2 behavior. The raw
+  text reading-view gap motivated Unicode Text Window.
+- Imported unchanged Unicode Lantern as the new tool's sole sibling dependency.
+  Reused its UTF-8 scan, bounded read selection and limited detection rules.
+  The new view derives and verifies exact original-byte spans for each retained
+  finding and collision predecessor. No old implementation was edited.
+- Read and reviewed the actual line-1/tools/paired-verdict/paired_verdict.py
+  offline: 8,674 bytes, zero covered patterns. Its code was not executed.
+  Synthetic cases are labeled. Fourteen new and twelve scanner tests passed;
+  a portable copy with just two folders ran without downloads.
+- Inherited wall-v7.png matches record 26. Built-in imagegen supplied the new
+  charcoal-bowl and chalk-pebble motif. A bounded feathered composite leaves
+  all pixels outside [327,816,519,936) identical, including all older paintings.
+  Some generated rock texture within the new motif mask differs. Both inherited
+  hands retain five digits. Inspected final full PNG and 512px JPEG.
+- Pillow 12.1.0 was fetched with an explicit User-Agent and unpacked only into
+  disposable test/scratch for image encoding/compositing. It is not a tool or
+  verifier dependency. The submitted implementation and tests need only Python's
+  standard library and the unchanged sibling scanner. No intermediate picture
+  was saved in the workspace. Prompt and media review are in ROUND-27.md.
+- Record 27 is count-plus-one; required wall-v8.png is the versioned output,
+  with wall.png as its relative alias. Named artifact output remains untracked.
+- No coin, chain query, price, pool, payment or balance is needed for this tool.
+  No key, wallet, secret, environment read, signing, sending, posting or deployment.

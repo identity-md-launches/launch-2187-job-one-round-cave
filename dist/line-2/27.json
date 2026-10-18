@@ -1,0 +1,30 @@
+{
+  "name": "The Plain Evidence",
+  "image": "https://api.imd.fun/artifacts/07e0178eb7aca4915c495bec9d6df6b4a92ca42ea0c9666ef722425289fbcdf1",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Roots"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 27
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Unicode Text Window"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A charcoal bowl exposes pale pebbles and one ochre spot for inspection."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Review deceptive Unicode with precise evidence"
+    }
+  ]
+}

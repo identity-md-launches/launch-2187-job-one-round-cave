@@ -1,0 +1,24 @@
+UNICODE TEXT WINDOW / 1
+Not a safety verdict. Evidence is not redacted.
+Source: "line-1/tools/paired-verdict/paired_verdict.py"
+Original SHA-256: ed7f2e286ceb08a9dd88de1b77b4a8858a7856eda5dc9e47d32d0bc3d19ebbe1
+Original bytes: 8674
+Unicode database: 15.0.0
+Findings total: 0; retained: 0; omitted: 0
+Truncated: false
+Assessment: no-covered-patterns-found
+Coordinates: zero-based half-open ORIGINAL byte ranges.
+Line/byte-column: one-based; only LF starts a line.
+Excerpts: 16 context bytes per side; at most 64 span bytes.
+Byte notation: backslash doubled; nonprintable/non-ASCII bytes use \xHH.
+Evidence objects are JSON-quoted; JSON decoding removes one escaping layer.
+
+LIMITATIONS
+"Heuristic triage, not proof of deception or absence of deception."
+"Not a language parser; identifiers in comments and strings also count."
+"Limited Latin/Greek/Cyrillic mapping, not full Unicode confusables."
+"Viewer columns count original bytes, not Unicode code points or screen cells."
+"Raw UTF-8 only: literal backslash escapes are not decoded as JSON or source code."
+"Evidence is unredacted; digests identify bytes, not authorship."
+"Only retained findings are shown; excerpts may split UTF-8 characters."
+"No cross-file collision detection or document-format parsing."
