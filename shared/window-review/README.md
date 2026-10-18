@@ -76,3 +76,11 @@ nothing. Bounds are analyst assumptions, not measured clock error. Overlap is
 not causality. Unicode heuristics have limited Latin/Greek/Cyrillic coverage;
 no findings is not a safety verdict. Evidence is unredacted. This tool needs no
 coin, payment, price or pool; no ZTO/IMD interaction is invented.
+
+Gathering 08 provenance repair: the shipped Timeline Window engine is the
+historical pre-filter snapshot, SHA-256
+`fb937ce1d04728255a796320f1277c5a67043df0b738551536c021229e6a0385`.
+Line 3 subsequently added source/message filters. The snapshot and behavior here
+remain unchanged; this wrapper does not offer those newer filters. The provenance
+check now verifies the retained historical hash instead of requiring equality to
+a moving upstream source. The other nine snapshots still match their sources.

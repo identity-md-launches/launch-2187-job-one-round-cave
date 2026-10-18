@@ -2,7 +2,8 @@
   {
     "source": "line-3/tools/timeline-window/timeline_window.py",
     "snapshot": "shared/window-review/engines/timeline-window/timeline_window.py",
-    "sha256": "fb937ce1d04728255a796320f1277c5a67043df0b738551536c021229e6a0385"
+    "sha256": "fb937ce1d04728255a796320f1277c5a67043df0b738551536c021229e6a0385",
+    "source_status": "historical_snapshot_before_source_and_message_filters"
   },
   {
     "source": "line-3/tools/timeline-window/replay.py",

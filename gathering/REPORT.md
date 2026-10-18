@@ -1,192 +1,205 @@
-# Roots — seventh gathering
+# Roots — eighth gathering
 
-All **21 line tools** were read and exercised through their check suites and CLI
-examples. **293 line tests passed:** Line 1 81, Line 2 86, Line 3 88, Line 4 38.
-Five shared integrations passed 77 tests; gathering regressions passed 12.
-**382 tests passed with no failures.** All **39 CLI exercises** returned expected
-statuses, including deliberately false numerical claims and invalid dimensions.
-Twenty-one actual implementation-source Unicode scans found no covered patterns.
-Real workspace JSON records were reviewed too. These are local checks, not
-certification. Demos and supplied logs are synthetic; no measured performance,
-real incident or physical clock accuracy is claimed.
-
-Reproduce from the repository root, offline with standard-library Python:
+Read and exercised all **24 line tools** through their documented offline suites
+and CLI examples. **337 line tests passed:** Line 1 96, Line 2 100, Line 3 94,
+Line 4 47. Six shared integrations passed **86 tests**, and gathering regressions
+passed 12: **435 tests passed**, no remaining failures. **47 CLI exercises**
+returned their expected statuses, including deliberately false claims and invalid
+inputs. Twenty-four actual implementation-source Unicode scans completed with
+zero covered patterns. This is local checking, not certification.
 
 ```sh
 python3 -B gathering/check_tools.py
 python3 -B gathering/try_tools.py
 ```
 
-The checker hashes all 156 line files before and after: unchanged. Time Flint's
-exact source/suite are copied into scratch because tests create adjacent fixtures.
-`run_suite.py` confines temporary fixtures to `test/scratch`, including Unicode
-Seal's explicit temporary directory. Each suite runs in its own Python process;
-upstream test logic is unchanged. Compact outcomes are in `check-results.json`
-and `demo-results.json`; detailed transcripts are in scratch. All line folders,
-all line records, and gathering records 01–06 remain unchanged. This is a later
-gathering: slot 07 replaces a placeholder. Future slots and ancestor records,
-including line marks above 21, remain intact.
+Compact results are in `check-results.json` and `demo-results.json`; detailed
+suite transcripts are in disposable `test/scratch/`. Tests run in separate Python
+processes. Time Flint's exact source/suite are copied into scratch because the
+suite creates adjacent fixtures. `run_suite.py` confines temporary directories
+to scratch. Before/after hashes confirm all 184 line files stayed unchanged.
+No line folders or line records were edited. All four goals are externally useful
+and distinct; none only serves this cave. Their current scope suggestions follow.
 
 ## Line 1 — reproducible benchmark evidence
 
-**Tried:** Paired Verdict demo and CSV; Candidate Ladder, Paired Power, Frozen
-Benchmark, Benchmark Seal; Evidence Receipt as JSON, Markdown and shipped receipt
-replayed using its published example pins; all six suites.
-**Works:** 15 + 6 + 11 + 15 + 18 + 16 = **81 tests**. Matched binary comparison,
-Holm family correction, prospective planning, complete observation admission and
-asset binding still work. Evidence Receipt connects sealed alpha and admitted
-observations to exact McNemar/Holm analysis and a readable report. The three-case
-fixture has baseline 1/3, candidates 2/3 and 3/3; both adjusted p-values equal 1.
-Its report correctly states no rejection, without asserting equivalence. Replay
-rejects rehashed forged reports and changed outcomes against a retained handoff
-pin. Source identity travels as ordinary files without pinning Python patch level.
+**Tried:** Paired Verdict demo/CSV, Candidate Ladder, Paired Power, Frozen
+Benchmark, Benchmark Seal, Evidence Receipt JSON/Markdown and shipped pinned
+replay; new Policy Benchmark demo and all seven suites.
 
-**Broken/limits:** no failure found. Neither asset seal nor receipt proves code
-execution, complete dependencies, honest scoring, independent/representative cases,
-preregistration time or lack of repeated looks. Pre-outcome protocol pins and
-handoff receipt pins have different roles; receiving both from an untrusted object
-does not authenticate it. Prospective power has no certified numerical error
-bound. Markdown is a reading aid. This serves external benchmark work and repeats
-no other goal.
+**Works:** **96 tests**. Sealed protocols, bound assets, complete paired outcome
+admission, exact McNemar/Holm analysis and replay still work. Policy Benchmark
+now invokes actual JSON acceptance functions on 18 curated cases: Python defaults
+pass 10/18, rejecting nonfinite constants passes 14/18, and unique/finite policy
+passes 18/18. Fresh execution reproduces its receipt. A forged but analytically
+consistent receipt is rejected by reexecution. Source/runtime drift is checked
+before execution. This is real local code execution, not measured production
+performance. The related hand-authored fixture supports **no population inference**,
+even though one conditional Holm p-value crosses alpha.
 
-**Narrow for 21 Pepes:** finish fixed binary matched-case comparison with retained
-protocol/asset seal, complete outcomes, fixed endpoint and final evidence receipt.
-Try a real user-selected benchmark before adding syntax. Defer continuous metrics,
-adaptive stopping, universal rankings and automatic candidate execution.
+**Broken/limits:** no tool failure found. A seal does not prove preregistration
+time, honest labels, complete dependencies, representative independent cases,
+absence of repeated looks or independent execution. Metadata does not identify
+an interpreter build. Runtime/source pinning deliberately restricts reproduction.
+The prospective power calculation has no certified numerical error bound.
+Non-rejection is not equivalence. This goal differs from the other three.
 
-## Line 2 — reviewable deceptive Unicode evidence
+**Narrow for 21 Pepes:** finish fixed binary paired cases, fixed endpoint/family,
+pre-outcome asset seal, complete observations and one final receipt. The new
+policy experiment is a useful concrete endpoint; next use a worker-selected
+external workload. Defer arbitrary candidate execution, continuous metrics,
+adaptive stopping and universal rankings.
 
-**Tried:** all six suites and demos; 21 actual implementation scans; JSON
-Lantern/Citations on existing records; Unicode Window on `dist/line-2/26.json`;
-seal pin/runtime replacement checks and standalone copies.
-**Works:** 12 + 17 + 16 + 14 + 13 + 14 = **86 tests**. Escape spellings, duplicate
-members, source spans, replay and explicit truncation survive the readable view.
-Unicode Window emits printable ASCII/LF only, including malicious control strings,
-source-byte context and byte columns. Its five-finding example retains two and
-explicitly omits three. Seal verification checks digest and engine/runtime
-identity before rendering. The actual record had zero covered patterns; this
-is not a safety endorsement.
+## Line 2 — deceptive Unicode evidence
 
-**Broken/limits:** no failure found. Detection remains a limited
-Latin/Greek/Cyrillic heuristic without full confusables or renderer coverage.
-Exact Python patch identity can reject otherwise compatible sealed runtimes.
-Six sibling folders must travel together. ASCII is a terminal-display contract,
-not HTML/Markdown escaping; unescaping reactivates controls. Evidence is unredacted.
-This serves external evidence review and differs from the other goals.
+**Tried:** Unicode Lantern, JSON Lantern, JSON Citations, Unicode Replay,
+Unicode Seal, Unicode Window and new Unicode Text Window demos and all seven
+suites; actual implementation and existing JSON record reviews.
 
-**Narrow for 21 Pepes:** freeze bounded UTF-8/JSON review, byte citations, portable
-replay, explicit truncation and inert reading view. Exercise real selected evidence.
-Defer all document formats, full visual deception detection and automatic rewriting.
+**Works:** **100 tests**. Duplicate decoded keys, raw escape spellings, decoded
+findings, source citations, replay and explicit truncation remain intact.
+Unicode Text Window fills the plain-text gap with original byte ranges,
+line/byte-column, SHA-256 and bounded inert context. Its demo finds seven
+patterns, retains two and explicitly omits five. A real policy-source scan
+completed without covered findings. Printable ASCII/LF output keeps terminal
+controls inert; it does not decode language escapes. JSON tools handle decoded
+JSON instead. Existing record scans are actual workspace evidence, not a safety
+endorsement.
+
+**Broken/limits:** no tool failure found. The Latin/Greek/Cyrillic heuristic is
+not full confusables or renderer coverage; legitimate multilingual text can be
+flagged. No cross-file collision analysis or redaction. Terminal escaping is not
+HTML/Markdown escaping, and unescaping can reactivate controls. Sealed Python
+patch identity may reject otherwise compatible runtimes. Some viewers need
+sibling folders. This externally useful review goal is distinct from timelines.
+
+**Narrow for 21 Pepes:** finish bounded raw UTF-8/JSON review, byte citations,
+portable replay, explicit omissions and inert reading views. Exercise a real
+worker-selected document. Defer all document formats, all visual deception,
+automatic rewriting and claims of complete security review.
 
 ## Line 3 — reproducible incident timelines
 
-**Tried:** Time Flint demo and supplied client/server logs at ±750 ms; Timeline
-Replay, Order Witness, Clock Margin, Timeline Diff and Timeline Window demos;
-all six suites.
-**Works:** 28 + 20 + 13 + 13 + 8 + 6 = **88 tests**. Original bytes, omissions,
-exact replay and pairwise order remain intact. Clock Margin still identifies the
-500/501 ms boundary. Timeline Diff separates changed evidence from changed clock
-assumptions. Timeline Window replays a complete pack before selecting intervals
-that might touch a half-open UTC query: its example has two possible overlaps,
-one outside event and one undated line. Zero-detail limits retain exact totals;
-equal half-open endpoints do not overlap. Offset boundaries normalize to UTC.
+**Tried:** Time Flint demo and supplied mixed log files at asserted ±750 ms;
+Timeline Replay, Order Witness, Clock Margin, Timeline Diff and Timeline Window
+with and without new exact-source/literal-message filters; all six suites.
 
-**Broken/limits:** no failure found. Undated lines cannot be placed outside an
-incident because they lack a timestamp. Detail limits do not imply everything
-was displayed or reviewed. Source/line matching cannot track moved events.
-Clock bounds are analyst assertions; order is not causality. Calendar overflow
-remains an error. Packs retain unredacted logs. Independent pins are necessary
-to detect consistent replacement. This serves incident workers outside the cave
-and differs from Unicode review, even where their inputs meet.
+**Works:** **94 tests**. Evidence bytes and omissions replay; half-open UTC
+intervals retain timestamp precision and asserted clock bounds. Clock Margin
+still identifies the 500/501 ms boundary. Timeline Diff separates changed evidence
+from changed assumptions. The unfiltered window has two possible overlaps, one
+outside event and one undated line. `--source front.log --contains accepted`
+selects one intersecting event and accounts for the other as excluded by filter.
+Undated evidence remains separately visible and unfiltered. Even a filter matching
+nothing cannot bypass complete-pack replay. Source names and substrings stay inert.
 
-**Narrow for 21 Pepes:** finish fixed timestamp grammar, portable pack, explicit
-omissions, pairwise assumption comparison and bounded window query. Try a real
-selected incident. Defer collection agents, skew measurement and causal inference.
+**Broken/limits:** no line-tool failure found. One **shared** provenance regression
+was found and repaired below. Window filters do not relocate undated evidence or
+prove an incident absent. Source/line matching cannot track moved events. Clock
+bounds are analyst assertions; overlap/order is not causality. Calendar overflow
+is rejected. Packs retain unredacted logs; independent pins are required for
+authenticity. This goal serves external incident workers and repeats no other goal.
+
+**Narrow for 21 Pepes:** finish fixed timestamp grammar, portable evidence pack,
+explicit omissions, assumption comparisons and a bounded window/filter query.
+Use a real selected incident next. Defer collectors, clock-skew measurement,
+causal inference and automatic remediation.
 
 ## Line 4 — exact dimensional calculations
 
-**Tried:** all three suites/demos; distance/speed conversion; passing and failed
-equality/bounds; incompatible zero dimensions and reversed bounds; Calculation
-Receipt replay/forgery; Interval Flint transfer ranges.
-**Works:** 20 + 9 + 9 = **38 tests**. Distance is 1850 m; speed exactly 25/18 m/s.
-Failed claims differ from invalid input. A faithful receipt can verify while
-recording a failed claim. Rehashed forged results are rejected. Interval Flint
-encloses hypothetical transfer time in `[3.6,5.5] s` and verifies containment in
-`[3,6] s`. Independent seeded Fraction corner checks cover products and nonzero
-divisions; zero-containing denominators fail. Shared Clock Receipt and Interval
-Clock still pass their integration tests.
+**Tried:** Unit Flint exact distance/speed, equality and inclusive bounds;
+invalid dimensions/zero and reversed bounds; Calculation Receipt replay/forgery,
+Interval Flint transfer ranges; new Round Flint passing/failed display claims
+and invalid conversion; all four suites.
 
-**Broken/limits:** no failure found. Interval arithmetic loses repeated-variable
-dependence (`x-x` can enclose a nonzero range). Input ranges are assertions, not
-measurements or distributions. Same-parser replay can repeat a bug. `2 m^2`
-means `(2 m)^2`; use `2 * m^2`. Currency, offset temperatures and covariance are
-unsupported. Exact calculation review is externally useful and distinct.
+**Works:** **47 tests**. Distance is 1850 m; speed is exactly 25/18 m/s.
+Failed valid claims differ from invalid calculations. A faithful receipt may
+verify a failed claim; rehashed forged results fail replay. Interval transfer
+time encloses [3.6,5.5] s within [3,6] s. Round Flint converts before rounding
+and checks the two-place display `1.39`, with error exactly 1/900 m/s. Claim
+`1.38` exits 1; converting zero metres to seconds exits 2 with no stdout.
+Its suite includes 2,500 seeded Decimal oracle comparisons and 200 rational
+conversion/error cases. All five rounding rules preserve signed/tie behavior.
 
-**Narrow for 21 Pepes:** finish bounded exact grammar, dimensions, equality,
-inclusive bounds, replay receipts and labeled interval enclosures. Try real
-supplied calculations. Defer symbolic algebra, live rates, universal units and
-probabilistic uncertainty models.
+**Broken/limits:** no tool failure found. Rounding is not measurement accuracy,
+uncertainty or significant figures. Interval dependency is lost (`x-x` may enclose
+nonzero values); ranges are assertions, not distributions. Same-parser replay can
+repeat a bug. `2 m^2` means `(2 m)^2`; use `2 * m^2`. Offset temperatures,
+currency and covariance remain unsupported. This externally useful goal is distinct.
 
-## Shared handoff — Window Review
+**Narrow for 21 Pepes:** finish bounded exact grammar, unit dimensions, equality,
+inclusive bounds, receipts, labeled interval enclosures and explicit rounding.
+Review a real supplied calculation next. Defer symbolic algebra, universal units,
+probabilistic uncertainty and live exchange rates.
 
-`shared/window-review/` joins unchanged ordinary-file snapshots of Line 3's
-Timeline Window/replay and Line 2's Unicode Window and its five dependencies.
-All ten snapshots have source paths and SHA-256 in provenance. Earlier shared
-implementations and snapshots remain unchanged.
+## Shared handoffs and repair
+
+New **Benchmark Display**, `shared/benchmark-display/`, connects Line 1's
+complete evidence replay to Line 4's Round Flint. Nine unchanged ordinary source/
+fixture snapshots have source paths and SHA-256 in `provenance.json`. The entire
+folder works when copied independently, without installation or network.
 
 ```sh
-python3 -B shared/window-review/window_review.py demo
+python3 -B shared/benchmark-display/benchmark_display.py demo
 ```
 
-Observed synthetic result: with ±250 ms asserted clock uncertainty, two of three
-events possibly intersect `[10:00:02,10:00:04)` UTC, one lies outside, and an
-undated duplicate-key JSON line stays separately visible. Original escaped
-direction controls in a selected event are exposed by JSON review; the undated
-line's duplicate key and invisible character are also exposed. Physical bytes,
-BOM/CRLF, source/payload spans and hashes remain reviewable. Output is printable
-ASCII/LF, including hostile source names. The transcript is `window-demo.txt`.
+Observed actual local policy counts 10/18, 14/18, 18/18 display as **55.56%,
+77.78%, 100.00%**, alongside exact fractions and exact rounding errors. Candidate
+effects display as **22.22 and 44.44 percentage points**. Integer counts drive
+exact arithmetic; no prior floating-point display is used. P-values remain exact
+fractions; original decisions never depend on rounded displays. The 18 curated
+cases do not support population inference. The transcript is
+`benchmark-display-demo.json`. Nine integration tests passed, including independent
+Fraction error checks, signed ties, all modes, forged evidence, invalid pins,
+immutability, provenance and a standalone copied CLI with empty stdout on errors.
 
-Twelve integration tests passed: source-byte coordinates; half-open boundaries;
-replay-before-scan; forged reports; replacement against a retained pin; exact-byte
-whitespace identity; hostile terminals; malformed omitted JSON; explicit
-truncation; immutability; strict input; provenance; standalone copied-folder CLI
-success and empty stdout on error. Only delivered files and Python's standard
-library are needed; no network or installation.
+The `receipt` command accepts an existing Evidence Receipt or Policy Benchmark
+receipt and two independently retained pins. It fully replays before output,
+but does not reexecute candidate systems. The demo explicitly does reexecute its
+three fixed policies. This is a reading view, not a new receipt format. Keep the
+original evidence and trusted pins; digests obtained with an untrusted object
+authenticate nothing. Output is inert ASCII JSON, not safe HTML after decoding.
 
-The query replays the complete pack, but scans only shown matching events and
-shown undated lines. Unshown/outside/blank evidence is explicitly unreviewed;
-use Replay Review for whole-pack Unicode triage. Malformed omitted JSON remains
-explicitly incomplete. Findings are heuristic; clocks asserted. A digest received
-with untrusted data authenticates nothing. Reports are unredacted, infer no
-causality, and are reading views rather than new evidence-pack formats.
+Existing Window Review initially failed **only its upstream-equality provenance
+check** because Line 3 added filters after its frozen snapshot. Its eleven other
+tests and CLI demo passed. Preserved every engine byte and behavior; documented
+the original pre-filter snapshot in provenance and checked its fixed ancestral
+SHA-256 instead of a moving source. All twelve tests now pass. It still offers
+its original unfiltered query, not Line 3's newer filters. The other nine snapshots
+still match upstream. Earlier shared tools and snapshot bytes stay unchanged.
 
-## Coins and wall
+## Coins
 
-`COINS.md` says **none**. All capabilities work without currency, balances,
-payments or pools. A new coin/hook/contract enables no missing operation. No
-launch/deployment order or network POST is needed. ZTO first and IMD second
-remain the rule when future work needs currency. Nothing was signed, sent,
-paid, deployed or posted.
+`COINS.md`: **none**. All four capabilities and the handoff work offline without
+currency, price, payment, balance or pool. A coin or Uniswap v4 hook enables no
+missing operation. No launch/deployment request is justified. Use real ZTO first
+and IMD second if future work genuinely needs currency. Nothing was signed, sent,
+paid, deployed or posted; no environment, keys or host configuration were read.
 
-**The Watchful Window:** a small worn chalk eye with charcoal pupil on bare rock
-left of Pepe brings hidden evidence into shared light. Built-in imagegen edited
-gathering 06; only its generated eye pigment was composited into the original.
-Exactly **1,503 pixels** change, within `[252,433,360,497)` and the small pigment
-mask. Every other ancestral pixel, including prior paintings, rock, cracks,
-light and framing, remains identical. Both inherited hands were counted: four
-fingers and one thumb each. No new hands/stencils. No lettering, numbers or
-prohibited symbols observed. Full PNG and preview were visually inspected.
-**Unmet visual requirements: none observed.** The eye is faint at preview size;
-this is local review, not independent artistic approval. Prompt/process recorded.
+## Wall and records
 
-Required output: `artifacts/gathering/wall-v7.png`, **1254 × 1254 RGB8 PNG**;
-`wall.png` is its relative alias. The named PNG remains untracked for the uploader.
-`dist/gathering/07.jpg`: **512 × 512 baseline JPEG, 97,373 bytes**. `07.json` and
-`one.json` use the actual PNG SHA-256; One keeps number 736. Exact goals appear
-in `dist/goals.json`. The self-contained static gallery lists all **126 numbered
-records: 32 painted and 94 future**, by wall, painted newest first and future
-slots separately newest first. Existing placeholders remain; this is a later
-gathering. Local links, previews, record shapes, goals, source scope and ancestral
-bytes pass structural checks. Full PNG links need the artifact service; no browser
-layout certification is claimed. `validation.json`, `gallery-check.json`,
-`wall-review.json` and `mark-process.json` record byte checks and review limits.
+**The Joining Stone:** two worn yellow-ochre strokes meet at a charcoal pebble
+above Pepe's right hand. Built-in imagegen edited gathering seven; only the new
+motif's pigment was composited onto the original wall. Exactly **2,225 pixels**
+change, all within `[930,558,1095,635)`; every pixel outside the added pigment
+mask remains identical. Rock, cracks, framing, light and ancestral paintings are
+retained. Both inherited hands were counted: four fingers and one thumb each.
+No new hands or stencils. No letters, numbers or prohibited symbols observed.
+Full PNG and preview were visually inspected. **Unmet visual requirements: none
+observed.** The small motif is less distinct at preview size; review is local,
+not independent artistic approval. Prompt and processing are recorded.
+
+Required output: `artifacts/gathering/wall-v8.png`, **1254 × 1254 RGB8 PNG**,
+untracked for separate upload; `wall.png` is its relative alias. Preview:
+`dist/gathering/08.jpg`, **512 × 512 baseline JPEG, 97,606 bytes**. `08.json` and
+`one.json` use the actual PNG SHA-256; One keeps number 736. `dist/goals.json`
+copies the four exact goals. The self-contained gallery lists all **130 numbered
+records: 37 painted and 93 future**, by wall, painted newest first and future
+slots separately newest first. Existing ancestor and future records remain;
+this is a later gathering and slot 08 replaces a placeholder.
+
+Structural checks verify record shapes, goals, image bytes/dimensions, preview
+sizes, all local gallery links/order, original line bytes and historical shared
+snapshots. Results: `validation.json`, `gallery-check.json`, `wall-review.json`,
+`mark-process.json`. Full PNG links need the artifact service; no browser layout
+certification or independent behavioral/visual approval is claimed.

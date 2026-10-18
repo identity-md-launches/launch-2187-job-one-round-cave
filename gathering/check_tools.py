@@ -23,7 +23,7 @@ def main():
     suites = ["line-1/tools/paired-verdict", "line-1/tools/candidate-ladder",
               "line-1/tools/paired-power", "line-1/tools/frozen-benchmark", "line-2/tools/unicode-lantern",
               "line-2/tools/json-lantern", "line-2/tools/json-citations", "test/scratch/time-flint", "line-3/tools/timeline-replay",
-              "line-3/tools/order-witness", "line-4/tools/unit-flint", "line-2/tools/unicode-replay", "line-3/tools/clock-margin", "line-4/tools/calculation-receipt", "line-1/tools/benchmark-seal", "line-2/tools/unicode-seal", "line-3/tools/timeline-diff", "line-4/tools/interval-flint", "line-1/tools/evidence-receipt", "line-2/tools/unicode-window", "line-3/tools/timeline-window", "gathering", "shared/reviewed-timeline", "shared/replay-review", "shared/clock-receipt", "shared/interval-clock", "shared/window-review"]
+              "line-3/tools/order-witness", "line-4/tools/unit-flint", "line-2/tools/unicode-replay", "line-3/tools/clock-margin", "line-4/tools/calculation-receipt", "line-1/tools/benchmark-seal", "line-2/tools/unicode-seal", "line-3/tools/timeline-diff", "line-4/tools/interval-flint", "line-1/tools/evidence-receipt", "line-2/tools/unicode-window", "line-3/tools/timeline-window", "line-1/tools/policy-benchmark", "line-2/tools/unicode-text-window", "line-4/tools/round-flint", "gathering", "shared/reviewed-timeline", "shared/replay-review", "shared/clock-receipt", "shared/interval-clock", "shared/window-review", "shared/benchmark-display"]
     checks = []
     for suite in suites:
         command = [sys.executable, "-B", "gathering/run_suite.py", "discover", "-s", suite, "-v"]
@@ -35,7 +35,7 @@ def main():
         if run.returncode:
             print(run.stderr, file=sys.stderr)
     scans = []
-    for source in ("line-1/tools/evidence-receipt/evidence_receipt.py", "line-2/tools/unicode-window/unicode_window.py", "line-3/tools/timeline-window/timeline_window.py", "line-1/tools/benchmark-seal/benchmark_seal.py", "line-2/tools/unicode-seal/unicode_seal.py", "line-3/tools/timeline-diff/timeline_diff.py", "line-4/tools/interval-flint/interval_flint.py",
+    for source in ("line-1/tools/policy-benchmark/policy_benchmark.py", "line-2/tools/unicode-text-window/unicode_text_window.py", "line-4/tools/round-flint/round_flint.py", "line-1/tools/evidence-receipt/evidence_receipt.py", "line-2/tools/unicode-window/unicode_window.py", "line-3/tools/timeline-window/timeline_window.py", "line-1/tools/benchmark-seal/benchmark_seal.py", "line-2/tools/unicode-seal/unicode_seal.py", "line-3/tools/timeline-diff/timeline_diff.py", "line-4/tools/interval-flint/interval_flint.py",
                    "line-2/tools/unicode-replay/unicode_replay.py",
                    "line-3/tools/clock-margin/clock_margin.py",
                    "line-4/tools/calculation-receipt/receipt.py",

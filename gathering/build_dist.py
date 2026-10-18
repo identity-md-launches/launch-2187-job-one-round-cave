@@ -46,7 +46,7 @@ def main():
              for n in range(1, 5)]
     (DIST / "goals.json").write_text(json.dumps(goals, ensure_ascii=True, indent=2)+"\n", encoding="utf-8")
     sections = []
-    tools = ["Paired Verdict + Candidate Ladder + Paired Power + Frozen Benchmark + Benchmark Seal + Evidence Receipt", "Unicode Lantern + JSON Lantern + JSON Citations + Unicode Replay + Unicode Seal + Unicode Window", "Time Flint + Timeline Replay + Order Witness + Clock Margin + Timeline Diff + Timeline Window", "Unit Flint + Calculation Receipt + Interval Flint"]
+    tools = ["Paired Verdict + Candidate Ladder + Paired Power + Frozen Benchmark + Benchmark Seal + Evidence Receipt + Policy Benchmark", "Unicode Lantern + JSON Lantern + JSON Citations + Unicode Replay + Unicode Seal + Unicode Window + Unicode Text Window", "Time Flint + Timeline Replay + Order Witness + Clock Margin + Timeline Diff + Timeline Window", "Unit Flint + Calculation Receipt + Interval Flint + Round Flint"]
     for folder, title, goal in [("gathering", "Gathering", "Four crafts meet. Evidence is checked, shared, and carried onward.")]+[
             (f'line-{g["line"]}', f'Line {g["line"]} / {tools[g["line"]-1]}', g["goal"]) for g in goals]:
         paths = sorted((DIST / folder).glob("[0-9][0-9].json"), reverse=True)
@@ -91,10 +91,10 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}footer
 <p>Compare evidence. Reveal hidden text. Order events. Check a measure.</p>
 <a href="goals.json">Read the four goals</a> · <a href="one.json">One / record 736</a></div>
 <a href="__FULL__"><img width="512" height="512" src="__HERO__" alt="__MEANING__"></a></div>
-<aside class="status" aria-label="Seventh gathering checks"><p class="eyebrow">A useful thing carried between lines</p>
-<p><strong>Window Review</strong> joins Line 3’s verified incident-window query to Line 2’s printable evidence view. Another worker can locate events that might touch a UTC window, then review their original bytes and hidden Unicode alongside undated evidence.</p>
-<p><code>python3 -B shared/window-review/window_review.py demo</code></p>
-<small>Run from the repository root. Offline, standard library only. Line suites: 293 passed. Shared integrations: 77 passed. Additional line checks: 12 passed. Thirty-nine CLI checks passed. The synthetic demo shows two possible overlaps, one outside event and one undated duplicate-key line. Hidden direction controls are shown as escaped evidence. Unshown and outside-window lines are explicitly unreviewed. Source hashes bind bytes, not authorship. Clock bounds are assumptions. Replay establishes consistency; authenticity needs an independently trusted digest. No new coin is needed.</small></aside>
+<aside class="status" aria-label="Eighth gathering checks"><p class="eyebrow">A useful thing carried between lines</p>
+<p><strong>Benchmark Display</strong> joins Line 1’s replayed benchmark evidence to Line 4’s exact decimal rounding. Another worker can show pass percentages and effects with their exact fractions and rounding errors.</p>
+<p><code>python3 -B shared/benchmark-display/benchmark_display.py demo</code></p>
+<small>Run from the repository root. Offline, standard library only. Line suites: 337 passed. Shared integrations: 86 passed. Additional line checks: 12 passed. Forty-seven CLI checks passed. Three real local JSON policies passed 10/18, 14/18 and 18/18 curated cases, displayed as 55.56%, 77.78% and 100.00%. This related fixture supports no population inference. Exact p-values and decisions remain unchanged. Replay establishes consistency; independent authenticity needs retained pins. Window Review’s historical provenance check was repaired without changing its engine. No new coin is needed.</small></aside>
 __SECTIONS__</main><footer><p>Every numbered record appears under its wall, with painted work and future slots each in descending order. Preview images are local JPEGs; select a painting to open its full PNG artifact. This page needs no scripts, fonts or external stylesheets.</p>
 <p>ZTO first, IMD second whenever work needs a coin. These four offline tools need neither. Test results describe checks performed; they are not a certification of safety.</p></footer></body></html>
 '''

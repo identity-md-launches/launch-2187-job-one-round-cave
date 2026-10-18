@@ -119,7 +119,12 @@ class ReviewTests(unittest.TestCase):
         for row in json.loads((HERE/'provenance.json').read_text()):
             data = (root/row['snapshot']).read_bytes()
             self.assertEqual(hashlib.sha256(data).hexdigest(), row['sha256'])
-            self.assertEqual(data, (root/row['source']).read_bytes())
+            if 'source_status' in row:
+                self.assertEqual(row['source_status'], 'historical_snapshot_before_source_and_message_filters')
+                self.assertEqual(row['source'], 'line-3/tools/timeline-window/timeline_window.py')
+                self.assertEqual(row['sha256'], 'fb937ce1d04728255a796320f1277c5a67043df0b738551536c021229e6a0385')
+            else:
+                self.assertEqual(data, (root/row['source']).read_bytes())
 
     def test_standalone_cli_and_no_partial_output(self):
         scratch = Path('test/scratch').resolve()

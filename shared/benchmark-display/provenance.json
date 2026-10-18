@@ -1,0 +1,47 @@
+[
+  {
+    "source": "line-1/tools/policy-benchmark/policy_benchmark.py",
+    "snapshot": "shared/benchmark-display/engines/policy-benchmark/policy_benchmark.py",
+    "sha256": "808325365105ac20cadb19000d847fe361268f82b423eee8084110a05ac1ce94"
+  },
+  {
+    "source": "line-1/tools/policy-benchmark/policies.py",
+    "snapshot": "shared/benchmark-display/engines/policy-benchmark/policies.py",
+    "sha256": "c9293a464e8515f735693398260f82b2d5d5691438b6baef20e282ea6d9577cc"
+  },
+  {
+    "source": "line-1/tools/policy-benchmark/cases.json",
+    "snapshot": "shared/benchmark-display/engines/policy-benchmark/cases.json",
+    "sha256": "4648830284b787b440b11788ab1ab690a45d0237c60b0785b12f57b5eed71ce8"
+  },
+  {
+    "source": "line-1/tools/policy-benchmark/evidence_receipt.py",
+    "snapshot": "shared/benchmark-display/engines/policy-benchmark/evidence_receipt.py",
+    "sha256": "1241dbc06a46e9e54465243bd14af6ffcf8d8f5a55f57fae226dbf788ea6fa6d"
+  },
+  {
+    "source": "line-1/tools/policy-benchmark/seal_engine.py",
+    "snapshot": "shared/benchmark-display/engines/policy-benchmark/seal_engine.py",
+    "sha256": "77cd08746d0b435c44817ff15c8c1d7def6326882a69963aba250e68a4bfa507"
+  },
+  {
+    "source": "line-1/tools/policy-benchmark/frozen_engine.py",
+    "snapshot": "shared/benchmark-display/engines/policy-benchmark/frozen_engine.py",
+    "sha256": "dbc53097d4fd0e599dad6f3280438f446eb4bfe80afced946b644e3868e1acc1"
+  },
+  {
+    "source": "line-1/tools/policy-benchmark/ladder_engine.py",
+    "snapshot": "shared/benchmark-display/engines/policy-benchmark/ladder_engine.py",
+    "sha256": "bce567dd5971bc85154a268f60207036c3c80d91ee4440da6a333851c614dc5e"
+  },
+  {
+    "source": "line-4/tools/round-flint/round_flint.py",
+    "snapshot": "shared/benchmark-display/engines/round-flint/round_flint.py",
+    "sha256": "4ab8885df51310e23f49f9889dcd8176d18b64bfe2d2294ed435095d86bccfb8"
+  },
+  {
+    "source": "line-4/tools/round-flint/engine.py",
+    "snapshot": "shared/benchmark-display/engines/round-flint/engine.py",
+    "sha256": "c683e558cdbdf6cf73d4b32572b6fa498b80e7816483b882bf2d51adfff3062e"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "schema": "json-policy-cases-v1",
+  "cases": [
+    {"id": "empty-object", "text": "{}", "expected_accept": true},
+    {"id": "nested-valid", "text": "{\"items\":[1,true,null,{\"a\":2}]}", "expected_accept": true},
+    {"id": "unicode-string", "text": "\"caf\u00e9\"", "expected_accept": true},
+    {"id": "finite-decimal", "text": "-12.5e2", "expected_accept": true},
+    {"id": "same-key-separate-objects", "text": "[{\"a\":1},{\"a\":2}]", "expected_accept": true},
+    {"id": "quoted-constant", "text": "\"NaN\"", "expected_accept": true},
+    {"id": "nan-constant", "text": "NaN", "expected_accept": false},
+    {"id": "infinity-constant", "text": "Infinity", "expected_accept": false},
+    {"id": "negative-infinity", "text": "-Infinity", "expected_accept": false},
+    {"id": "nested-constant", "text": "{\"x\":[NaN]}", "expected_accept": false},
+    {"id": "duplicate-name", "text": "{\"a\":1,\"a\":2}", "expected_accept": false},
+    {"id": "escaped-duplicate-name", "text": "{\"a\":1,\"\\u0061\":2}", "expected_accept": false},
+    {"id": "nested-duplicate", "text": "{\"x\":{\"b\":1,\"b\":2}}", "expected_accept": false},
+    {"id": "overflowing-float", "text": "1e400", "expected_accept": false},
+    {"id": "truncated-array", "text": "[1,", "expected_accept": false},
+    {"id": "trailing-data", "text": "{}[]", "expected_accept": false},
+    {"id": "leading-zero", "text": "01", "expected_accept": false},
+    {"id": "empty-input", "text": "", "expected_accept": false}
+  ]
+}

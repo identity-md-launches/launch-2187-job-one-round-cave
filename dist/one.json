@@ -1,6 +1,6 @@
 {
   "name": "One",
-  "image": "https://api.imd.fun/artifacts/9e1b7619a482f661a99d16fdff5da2530e9506cb92a416724b634f1c79122850",
+  "image": "https://api.imd.fun/artifacts/482215a63cbe20152d4bdd70f744f7b60c811522f407fe1a61beffa1f8a45447",
   "attributes": [
     {
       "trait_type": "Cave",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Meaning",
-      "value": "A watchful chalk eye brings hidden evidence into the shared light."
+      "value": "Two trails join at a dark stone, carrying exact measures into shared evidence."
     }
   ]
 }

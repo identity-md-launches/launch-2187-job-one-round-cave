@@ -1,16 +1,16 @@
 {
-  "wall_sha256": "9e1b7619a482f661a99d16fdff5da2530e9506cb92a416724b634f1c79122850",
+  "wall_sha256": "482215a63cbe20152d4bdd70f744f7b60c811522f407fe1a61beffa1f8a45447",
   "observations": [
-    "Pepe retains a wide mouth and heavy-lidded eyes in worn earth pigments.",
-    "Both inherited hands counted: four fingers and one thumb each. No new hands or hand stencils.",
-    "Added a small worn chalk eye with charcoal pupil on bare rock left of Pepe; ancestral paintings remain exact.",
-    "Original 1254 by 1254 square rock, roots, cracks, light and framing retained outside the new pigment mask.",
-    "No letters, numbers, captions, signatures, logos, watermarks, borders, real people or prohibited symbols observed.",
-    "Full PNG and 512px JPEG inspected locally; faint worn eye remains visible at preview size."
+    "Pepe retains the ancestral wide mouth, heavy-lidded eyes and worn earth pigments.",
+    "Counted both inherited hands: four fingers and one thumb each. No new hands or stencils.",
+    "A small yellow-ochre joining stroke and charcoal node are added on rock right of Pepe, above the right hand.",
+    "The 1254 by 1254 square rock, cracks, roots, color, light, framing and every ancestral mark remain unchanged outside the new pigment mask.",
+    "No letters, numbers, captions, logos, signatures, watermarks, frames, real people or prohibited symbols observed.",
+    "Full wall and 512px preview were inspected locally."
   ],
   "limits": [
     "Local visual review, not independent artistic approval.",
-    "Small worn eye is faint at 512px preview size."
+    "The small, worn motif is less distinct at preview size."
   ],
   "unmet_visual_requirements": []
 }

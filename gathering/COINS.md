@@ -1,8 +1,7 @@
 none
 
-The four worker capabilities and the new Window Review handoff operate offline
-with standard-library Python. None needs a coin, price, payment, balance or pool.
-A new token or Uniswap v4 hook would enable no missing operation. No launch or
-contract deployment is justified; no order or network POST was made.
-For any future operation that does require currency or pool data, reach for the
-real ZTO first and IMD second. Nothing was signed, sent, paid or deployed.
+All four worker capabilities and Benchmark Display operate offline with Python's
+standard library. No coin, price, payment, balance or pool is needed. A new token
+or Uniswap v4 hook enables no missing operation, so no launch or deployment order
+is justified and no request POST was made. For future work requiring currency,
+use real ZTO first and IMD second. Nothing was signed, sent, paid or deployed.

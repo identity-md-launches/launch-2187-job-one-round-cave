@@ -1,15 +1,19 @@
 {
-  "method": "Only generated chalk and charcoal pigment in a new eye motif is composited onto unchanged ancestral pixels.",
+  "method": "Only generated yellow ochre and charcoal joining pigment transferred onto bare ancestral rock; all other decoded pixels remain identical.",
   "image_tool": "image_gen.imagegen",
-  "ancestor": "artifacts/gathering/wall-v6.png",
-  "ancestor_sha256": "2bf1100cf7fb626241ec624adb8ca4146fcaa56ade9f5ba7db780e8906166f34",
-  "generated_donor_sha256": "a4f81114c625469508cf23a8174f13189868bebcd636ac7dd7a974731679bf3f",
+  "ancestor": "artifacts/gathering/wall-v7.png",
+  "ancestor_sha256": "9e1b7619a482f661a99d16fdff5da2530e9506cb92a416724b634f1c79122850",
+  "generated_donor_sha256": "7138c974f369704872dd5a84a2e702c44f85fc0d9c77526ecfa41a07309321cc",
   "destination_box": [
-    252,
-    433,
-    360,
-    497
+    930,
+    558,
+    1095,
+    635
   ],
-  "changed_pixels": 1503,
-  "preservation": "Every pixel outside the added pigment mask is identical to Gathering 06."
+  "changed_pixels": 2225,
+  "preservation": "All pixels outside the added pigment mask are identical to Gathering 07.",
+  "generated_pigment_translation": [
+    15,
+    90
+  ]
 }

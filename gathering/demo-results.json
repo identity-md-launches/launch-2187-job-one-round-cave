@@ -2,6 +2,213 @@
   "checks_passed": true,
   "examples": [
     {
+      "name": "shared exact benchmark display",
+      "command": [
+        "python3",
+        "-B",
+        "shared/benchmark-display/benchmark_display.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {}
+    },
+    {
+      "name": "executed policy benchmark",
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/policy-benchmark/policy_benchmark.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "passes": {
+          "python-default-v1": 10,
+          "reject-constants-v1": 14,
+          "unique-finite-v1": 18
+        },
+        "case_count": 18,
+        "recheck": "passed"
+      }
+    },
+    {
+      "name": "plain Unicode window",
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/unicode-text-window/unicode_text_window.py",
+        "--demo",
+        "--max-findings",
+        "2"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "text": {
+        "bytes": 2742,
+        "sha256": "4a78266f49f3ada14f22f1612aed1de7b459e1a30239bfbb7bfafc1d02de84c1",
+        "printable_ascii_and_lf": true,
+        "opening_lines": [
+          "UNICODE TEXT WINDOW / 1",
+          "Not a safety verdict. Evidence is not redacted.",
+          "Source: \"<synthetic-demo>\"",
+          "Original SHA-256: 7f17bd4cb302aff6547f61f8bb97d85403b5290806ac642e472ca0e146553ddc",
+          "Original bytes: 65",
+          "Unicode database: 15.0.0",
+          "Findings total: 7; retained: 2; omitted: 5"
+        ]
+      },
+      "observed": {}
+    },
+    {
+      "name": "plain Unicode actual policy source",
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/unicode-text-window/unicode_text_window.py",
+        "--file",
+        "line-1/tools/policy-benchmark/policies.py"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "text": {
+        "bytes": 1259,
+        "sha256": "c70fe7f9cac7df5ecd52d6f5277f30445be5a1d78657370f69c8303489aabfd0",
+        "printable_ascii_and_lf": true,
+        "opening_lines": [
+          "UNICODE TEXT WINDOW / 1",
+          "Not a safety verdict. Evidence is not redacted.",
+          "Source: \"line-1/tools/policy-benchmark/policies.py\"",
+          "Original SHA-256: c9293a464e8515f735693398260f82b2d5d5691438b6baef20e282ea6d9577cc",
+          "Original bytes: 1032",
+          "Unicode database: 15.0.0",
+          "Findings total: 0; retained: 0; omitted: 0"
+        ]
+      },
+      "observed": {}
+    },
+    {
+      "name": "filtered timeline",
+      "command": [
+        "python3",
+        "-B",
+        "line-3/tools/timeline-window/timeline_window.py",
+        "demo",
+        "--source",
+        "front.log",
+        "--contains",
+        "accepted"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "filters": {
+          "case_sensitive": true,
+          "message_contains_literal": "accepted",
+          "source_exact": "front.log",
+          "undated_lines_filtered": false
+        },
+        "replay": {
+          "clock_uncertainty_ms": 250,
+          "events": 3,
+          "omitted": 1,
+          "sources": 2,
+          "verified": true
+        },
+        "counts": {
+          "contained": 0,
+          "events_total": 3,
+          "excluded_by_filter": 1,
+          "matching": 1,
+          "not_shown": 0,
+          "omitted_lines_not_shown": 0,
+          "omitted_lines_shown": 1,
+          "omitted_lines_total": 1,
+          "outside": 1,
+          "possible_overlap": 1,
+          "shown": 1,
+          "window_matching": 2
+        }
+      }
+    },
+    {
+      "name": "exact rounding match",
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/round-flint/round_flint.py",
+        "10 km / 2 h",
+        "--to",
+        "m/s",
+        "--places",
+        "2",
+        "--expect",
+        "1.39"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "rounded": "1.39",
+        "exact_value": "25/18",
+        "error": "1/900",
+        "unit": "m/s",
+        "check": {
+          "claim": "1.39",
+          "matches": true
+        }
+      }
+    },
+    {
+      "name": "exact rounding mismatch",
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/round-flint/round_flint.py",
+        "10 km / 2 h",
+        "--to",
+        "m/s",
+        "--places",
+        "2",
+        "--expect",
+        "1.38"
+      ],
+      "expected_exit": 1,
+      "exit_code": 1,
+      "passed": true,
+      "observed": {
+        "rounded": "1.39",
+        "exact_value": "25/18",
+        "error": "1/900",
+        "unit": "m/s",
+        "check": {
+          "claim": "1.38",
+          "matches": false
+        }
+      }
+    },
+    {
+      "name": "invalid rounded dimension",
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/round-flint/round_flint.py",
+        "0 m",
+        "--to",
+        "s"
+      ],
+      "expected_exit": 2,
+      "exit_code": 2,
+      "passed": true,
+      "diagnostic": "round-flint: target dimensions do not match result dimensions\n"
+    },
+    {
       "name": "evidence receipt JSON",
       "command": [
         "python3",
@@ -144,6 +351,12 @@
       "exit_code": 0,
       "passed": true,
       "observed": {
+        "filters": {
+          "case_sensitive": true,
+          "message_contains_literal": null,
+          "source_exact": null,
+          "undated_lines_filtered": false
+        },
         "replay": {
           "clock_uncertainty_ms": 250,
           "events": 3,
@@ -154,6 +367,7 @@
         "counts": {
           "contained": 0,
           "events_total": 3,
+          "excluded_by_filter": 0,
           "matching": 2,
           "not_shown": 0,
           "omitted_lines_not_shown": 0,
@@ -161,7 +375,8 @@
           "omitted_lines_total": 1,
           "outside": 1,
           "possible_overlap": 2,
-          "shown": 2
+          "shown": 2,
+          "window_matching": 2
         }
       }
     },

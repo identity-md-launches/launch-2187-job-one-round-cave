@@ -1,0 +1,98 @@
+{
+  "schema": "benchmark-display/1",
+  "verification": "local_policy_execution_and_reexecution_plus_analytical_replay",
+  "seal_sha256": "01612f2a419f56056dc09d402b78b06548ad5907bba1c14347b316156ecc5f00",
+  "receipt_sha256": "ac336a28611af7ca51a11764a9f161865c6b8a1199043e13d2b56f6fc946cc43",
+  "data_kind_from_receipt": "user_supplied_benchmark",
+  "rounding": {
+    "places": 2,
+    "mode": "half-even",
+    "error_means": "display minus exact"
+  },
+  "familywise_alpha": "0.05",
+  "systems": [
+    {
+      "name": "python-default-v1",
+      "role": "baseline",
+      "passes": 10,
+      "cases": 18,
+      "pass_percent": {
+        "exact_fraction": "500/9",
+        "display": "55.56",
+        "rounding_error": "1/225",
+        "halfway": false
+      }
+    },
+    {
+      "name": "reject-constants-v1",
+      "role": "candidate",
+      "passes": 14,
+      "cases": 18,
+      "pass_percent": {
+        "exact_fraction": "700/9",
+        "display": "77.78",
+        "rounding_error": "1/450",
+        "halfway": false
+      }
+    },
+    {
+      "name": "unique-finite-v1",
+      "role": "candidate",
+      "passes": 18,
+      "cases": 18,
+      "pass_percent": {
+        "exact_fraction": "100/1",
+        "display": "100.00",
+        "rounding_error": "0",
+        "halfway": false
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "candidate": "reject-constants-v1",
+      "candidate_only_pass": 4,
+      "baseline_only_pass": 0,
+      "effect_percentage_points": {
+        "exact_fraction": "200/9",
+        "display": "22.22",
+        "rounding_error": "-1/450",
+        "halfway": false
+      },
+      "holm_adjusted_p": {
+        "numerator": "1",
+        "denominator": "8"
+      },
+      "familywise_reject_equal_discordance": false,
+      "observed_direction": "candidate"
+    },
+    {
+      "candidate": "unique-finite-v1",
+      "candidate_only_pass": 8,
+      "baseline_only_pass": 0,
+      "effect_percentage_points": {
+        "exact_fraction": "400/9",
+        "display": "44.44",
+        "rounding_error": "-1/225",
+        "halfway": false
+      },
+      "holm_adjusted_p": {
+        "numerator": "1",
+        "denominator": "64"
+      },
+      "familywise_reject_equal_discordance": true,
+      "observed_direction": "candidate"
+    }
+  ],
+  "limits": [
+    "Reading view only; retain the original receipt and independently trusted pins.",
+    "Displayed percentages are rounded; p-values remain exact fractions and decisions use the original exact analysis.",
+    "A non-rejection is not equivalence.",
+    "Analytical replay proves consistency, not execution, honest labels, independence or representativeness.",
+    "When using curated JSON policy cases, population inference is unsupported even if a conditional test rejects.",
+    "Engine source identity is checked; version metadata and hashes do not establish trusted authorship.",
+    "No measurement uncertainty, confidence interval or significant-figure claim is added."
+  ],
+  "fixture": "18 curated JSON acceptance cases; actual local execution, not a representative sample",
+  "pin_note": "Demo pins were created in this run, not independently authenticated or timestamped."
+}

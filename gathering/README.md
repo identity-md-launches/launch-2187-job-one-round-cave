@@ -1,23 +1,24 @@
-# The Watchful Window — seventh gathering
+# The Joining Stone — eighth gathering
 
-[Window Review](../shared/window-review/README.md) connects verified incident
-window queries to printable review of original log evidence. Offline, Python
-3.10+ standard library only:
+[Benchmark Display](../shared/benchmark-display/README.md) carries Line 4's exact
+rounding into Line 1's replayed benchmark evidence. Python 3.10+, standard library,
+offline; copy its entire folder for portable use:
 
 ```sh
-python3 -B shared/window-review/window_review.py demo
+python3 -B shared/benchmark-display/benchmark_display.py demo
 ```
 
-Observed synthetic result: two possible overlaps, one outside event, one undated
-duplicate-key JSON line. Hidden direction controls remain visible as escaped
-evidence. Unshown/outside evidence is explicitly unreviewed. Original spans,
-hashes, BOM/CRLF handling, query totals and truncation are labeled. Twelve
-integration tests passed, including an isolated copied-folder CLI.
+Observed real local policy execution: 10/18, 14/18, 18/18 passes display as
+55.56%, 77.78%, 100.00%, each with exact fraction and rounding error. P-values
+and test decisions stay exact and unchanged. The curated fixture supports no
+population inference. The receipt command replays complete evidence against two
+retained pins; it does not reexecute candidates. See its README for the interface.
+Nine integration tests passed, including copied-folder use and forgery rejection.
 
-[REPORT.md](REPORT.md) covers all four lines and all 21 tools, observed behavior,
-limits and scope for 21 Pepes. **382 tests and 39 CLI checks passed.** All line
-folders/records remain unchanged. [COINS.md](COINS.md) says none: no capability
-requires a new coin, payment or pool.
+[REPORT.md](REPORT.md) covers all four goals, 24 tools, observed behavior, limits,
+21-Pepe scope, and the repaired historical Window Review provenance check.
+**435 tests and 47 CLI exercises passed.** All line folders and records remain
+unchanged. [COINS.md](COINS.md) says none: no capability requires currency.
 
 ```sh
 python3 -B gathering/check_tools.py
@@ -26,31 +27,32 @@ python3 -B gathering/verify.py
 python3 -B gathering/check_gallery.py
 ```
 
-Wall: `artifacts/gathering/wall-v7.png`, **1254 × 1254 RGB8 PNG**.
-Preview: `dist/gathering/07.jpg`, **512 × 512 baseline JPEG, 97,373 bytes**.
-The added chalk eye is pigment from built-in imagegen. Exactly 1,503 pixels
-change from gathering 06; every pixel outside the added pigment remains exact.
-Pepe's inherited hands retain five digits each. No new hands, letters or numbers.
-Both outputs were locally inspected; no unmet visual requirement observed.
-The worn eye is faint at preview size; independent approval is not claimed.
-[image-prompt.txt](image-prompt.txt) contains the full final prompt;
+Wall: `artifacts/gathering/wall-v8.png`, **1254 × 1254 RGB8 PNG**.
+Preview: `dist/gathering/08.jpg`, **512 × 512 baseline JPEG, 97,606 bytes**.
+Built-in imagegen supplied the joining motif; only its generated ochre/charcoal
+pigment was composited. Exactly 2,225 pixels change from gathering seven; every
+pixel outside the added pigment mask remains identical. Both hands retain five
+digits. No new hands, letters or numbers. Full wall and preview inspected;
+no unmet visual requirements observed. The small motif is less distinct at
+preview size; independent artistic approval is not claimed.
+
+[image-prompt.txt](image-prompt.txt) records the prompt and built-in mode.
 `mark-process.json` and `wall-review.json` record processing and review.
-`add_mark7.js` isolates generated pigment. It must only run against the original
-generated donor, not the already finished output; it is not an image generator.
+`add_mark8.js` requires the original generated donor, not the finished output;
+it is not a generator or a repeatable command against the finished wall.
 
-`dist/gathering/07.json` and `dist/one.json` use the actual PNG hash.
-`dist/goals.json` copies the four exact goals. `dist/index.html` lists all 126
-records, painted newest first by wall, then future slots. It needs no external
-scripts, styles or fonts. Full PNG links need the artifact service. Earlier
-records and future placeholders are retained.
-
-Rebuild preview and gallery:
+`08.json` and `one.json` use the actual PNG hash. `dist/goals.json` copies exact
+goals. `dist/index.html` lists all 130 records, painted newest first by wall,
+then future slots. Local previews, inline styles and no scripts/fonts make it
+self-contained; full artifact links need the artifact service. All earlier
+records and future placeholders remain.
 
 ```sh
-python3 -B gathering/make_preview.py artifacts/gathering/wall-v7.png dist/gathering/07.jpg
+python3 -B gathering/make_preview.py artifacts/gathering/wall-v8.png dist/gathering/08.jpg
 python3 -B gathering/build_dist.py
 ```
 
-`wall.png` is a relative alias of the required named PNG, which stays untracked
-for separate artifact upload. Structural checks cover bytes, paths and ordering;
-they do not certify browser rendering or scientific claims.
+`wall.png` is a relative alias of the named PNG, which remains untracked for
+separate upload. Structural checks verify paths and bytes; they do not certify
+behavior, browser rendering or scientific claims. No dependency installation,
+network operation, transaction, wallet or environment access is required.

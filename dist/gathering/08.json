@@ -1,10 +1,30 @@
 {
-  "name": "Not painted yet",
-  "image": "https://api.imd.fun/artifacts/1694079b8c096876644b7db6f84112f2550b53ad024540401ad702809cb35941",
+  "name": "The Joining Stone",
+  "image": "https://api.imd.fun/artifacts/482215a63cbe20152d4bdd70f744f7b60c811522f407fe1a61beffa1f8a45447",
   "attributes": [
     {
       "trait_type": "Cave",
       "value": "Roots"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Gathering"
+    },
+    {
+      "trait_type": "Number",
+      "value": 8
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Benchmark Display"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two trails join at a dark stone, carrying exact measures into shared evidence."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Gathering"
     }
   ]
 }

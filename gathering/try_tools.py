@@ -8,6 +8,14 @@ import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 CASES = [
+ ('shared exact benchmark display', ['shared/benchmark-display/benchmark_display.py', 'demo'], 0),
+ ('executed policy benchmark', ['line-1/tools/policy-benchmark/policy_benchmark.py', 'demo'], 0),
+ ('plain Unicode window', ['line-2/tools/unicode-text-window/unicode_text_window.py', '--demo', '--max-findings', '2'], 0),
+ ('plain Unicode actual policy source', ['line-2/tools/unicode-text-window/unicode_text_window.py', '--file', 'line-1/tools/policy-benchmark/policies.py'], 0),
+ ('filtered timeline', ['line-3/tools/timeline-window/timeline_window.py', 'demo', '--source', 'front.log', '--contains', 'accepted'], 0),
+ ('exact rounding match', ['line-4/tools/round-flint/round_flint.py', '10 km / 2 h', '--to', 'm/s', '--places', '2', '--expect', '1.39'], 0),
+ ('exact rounding mismatch', ['line-4/tools/round-flint/round_flint.py', '10 km / 2 h', '--to', 'm/s', '--places', '2', '--expect', '1.38'], 1),
+ ('invalid rounded dimension', ['line-4/tools/round-flint/round_flint.py', '0 m', '--to', 's'], 2),
  ('evidence receipt JSON', ['line-1/tools/evidence-receipt/evidence_receipt.py', 'demo', '--json'], 0),
  ('evidence receipt readable demo', ['line-1/tools/evidence-receipt/evidence_receipt.py', 'demo'], 0),
  ('evidence receipt shipped replay', ['line-1/tools/evidence-receipt/evidence_receipt.py', 'replay', '--receipt', 'line-1/tools/evidence-receipt/example-receipt.json', '--expected-seal-sha256', '0d18499d7dcb9150785724d7121ffeafa8607ace1612900920b715c4f85b3947', '--expected-receipt-sha256', 'a48b052b69deb57fe5919d28cbc0ea5d33c65fcf69befaba3dfab2c8d4d0594d', '--markdown'], 0),
@@ -69,7 +77,7 @@ def main():
                     'opening_lines': run.stdout.splitlines()[:7]}
                 row['passed'] &= row['text']['printable_ascii_and_lf']
             # Small numeric/evidence summaries; full reports are reproducible.
-            keys = ['comparison', 'lower', 'upper', 'within', 'pair', 'line_changes', 'consistent_replacement_rejected', 'runtime_mismatch_rejected', 'rejected_rehashed_replacement', 'analysis', 'asserted_total_bound_ms', 'different_valid_bound_rejected', 'matching_receipt', 'failed_bound_verified', 'failed_bound_calculation_exit', 'rehashed_altered_result_rejected', 'verified', 'retained_findings', 'truncated', 'altered_citation_rejected', 'paired_cases', 'table', 'test', 'candidates', 'comparison_threshold',
+            keys = ['passes', 'case_count', 'recheck', 'rounded', 'exact_value', 'error', 'filters', 'comparison', 'lower', 'upper', 'within', 'pair', 'line_changes', 'consistent_replacement_rejected', 'runtime_mismatch_rejected', 'rejected_rehashed_replacement', 'analysis', 'asserted_total_bound_ms', 'different_valid_bound_rejected', 'matching_receipt', 'failed_bound_verified', 'failed_bound_calculation_exit', 'rehashed_altered_result_rejected', 'verified', 'retained_findings', 'truncated', 'altered_citation_rejected', 'paired_cases', 'table', 'test', 'candidates', 'comparison_threshold',
                     'smallest_evaluated_size_meeting_target', 'sizes', 'finding_count',
                     'assessment', 'sha256', 'value', 'unit', 'check', 'replay',
                     'tampered_report_rejected', 'tampered_timeline_rejected', 'review_errors',
